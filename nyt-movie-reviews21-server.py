@@ -44,7 +44,7 @@ def reviews():
     try:
         query = request.args['keyword']
     except KeyError:
-        return 'HTTP Status 400: URI keyword parameter is missing from your request.', 400
+        return 'HTTP Status 400: keyword parameter is missing from your request.', 400
 
     try:
         data = reviews21(query)
